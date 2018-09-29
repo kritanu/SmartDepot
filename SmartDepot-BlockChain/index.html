@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Depot</title>
+    <link rel="icon" type="image/png" href="images/icons/hello.ico"/>
+
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!-- =============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!-- ============================================================================================== -->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+
+</head>
+<body>
+<!--	<div class="container"> 
+
+		<h1>Smart Depot</h1>
+		
+-->
+        
+        <!-- <hr> -->
+
+       <!-- <label for="fName" class="col-lg-2 control-label">First Name</label>
+        <input id="fName" type="text">
+
+        <label for="lName" class="col-lg-2 control-label">Last Name</label>
+        <input id="lName" type="text">
+
+        <label for="age" class="col-lg-2 control-label">Serial Number</label>
+        <input id="age" type="text">
+
+		<button id="button">Update Item</button>-->
+		
+<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-010.jpg');">
+			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-49">
+						<img src="images/sd.jpg" width="350" height="60">
+
+						<br>
+						<div class="label-input100bykritanu" id="countIns"></div>
+						<div class="label-input100bykritanu"  id="instructor"></div>
+						<p style="font-size:10px"><div class="label-input100bykritanu" id="insTrans" ></div></p>
+
+
+					</span>
+					<div class="wrap-input100 validate-input m-b-23" data-validate = "Retailer detail required">
+						<span class="label-input100">Retailer Detail</span>
+						<input class="input100" type="text" id="fName" name="fName" placeholder="Enter Retailer Detail">
+						<span class="focus-input100" data-symbol="&#10097;"></span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate="Batch number required">
+						<span class="label-input100">Batch Number</span>
+						<input class="input100" type="text" id="lName" name="lName" placeholder="Enter Batch Number">
+						<span class="focus-input100" data-symbol="&#10097;"></span>
+					</div>
+					<br>
+					<div class="wrap-input100 validate-input" data-validate="Seial number required">
+						<span class="label-input100">Serial Number</span>
+						<input class="input100" type="text" id="age" name="age" placeholder="Enter Serial Number">
+						<span class="focus-input100" data-symbol="&#10097;"></span>
+					</div>
+					<div class="text-right p-t-8 p-b-31">
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<button id="button" type="button" class="login100-form-btn">Update Item</button>
+							<div class="login100-form-bgbtn"></div>
+						</div>
+					</div>
+						</span>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+    <script>
+
+       if (typeof web3 !== 'undefined') {
+            web3 = new Web3(web3.currentProvider);
+        } else {
+            web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+        }
+
+        web3.eth.defaultAccount = web3.eth.accounts[0];
+        var WarehouseContract = web3.eth.contract([
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			}
+		],
+		"name": "getItem",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			},
+			{
+				"name": "",
+				"type": "bytes16"
+			},
+			{
+				"name": "",
+				"type": "bytes16"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "countItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "ItemAddrs",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "getItems",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_address",
+				"type": "address"
+			},
+			{
+				"name": "_serial",
+				"type": "uint256"
+			},
+			{
+				"name": "_fName",
+				"type": "bytes16"
+			},
+			{
+				"name": "_lName",
+				"type": "bytes16"
+			}
+		],
+		"name": "setItem",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": false,
+				"name": "fName",
+				"type": "bytes16"
+			},
+			{
+				"indexed": false,
+				"name": "lName",
+				"type": "bytes16"
+			},
+			{
+				"indexed": false,
+				"name": "serial",
+				"type": "uint256"
+			}
+		],
+		"name": "itemInfo",
+		"type": "event"
+	}
+]);
+
+    var Warehouse = WarehouseContract.at('0x94983fa146d50d612ddecb921d122241f7d8ca85');
+    console.log(Warehouse);
+
+    var itemEvent = Warehouse.itemInfo({}, 'latest');
+    itemEvent.watch(function(error, result){
+            if (!error)
+                {
+					if (result.blockHash != $("#insTrans").html())
+					$("#loader").hide();
+					$("#insTrans").html('Block hash: ' +result.blockHash);
+                    $("#instructor").html(web3.toAscii(result.args.lName) + ' ' + result.args.serial  + ' (' + web3.toAscii(result.args.fName) + ')');
+                } else {
+                    $("#loader").hide();
+                    console.log(error);
+                }
+		});
+		Warehouse.countItems((err,res) => {
+			if (res)
+        	$("#countIns").html(res.c + ' Items'); 
+		})
+
+    $("#button").click(function() {
+        //$("#loader").show();
+		console.log('Values init');
+		
+		console.log($("#age").val(), $("#fName").val(),$("#lName").val());
+
+        Warehouse.setItem(web3.eth.defaultAccount,$("#age").val(), $("#fName").val(),$("#lName").val(), (err, res) => {
+            if (err) {
+            $("#loader").hide();
+            console.log('Trans Failed');
+        }
+        
+    });
+        
+    });
+
+
+    </script>
+
+</body>
+</html>
