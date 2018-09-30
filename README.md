@@ -13,7 +13,7 @@
 
 **How it works**
 
-* Climate sensing is done by a sensor on the raspberri pi which constantly returns the temperature and humidity value.
+* Climate sensing is done by a sensor on the raspberry pi which constantly returns the temperature and humidity value.
 
 * The intruder detection does motion detection using openCV. When an intruder is detected, it triggers a simple mail transfer protocol (SMTP)
 
