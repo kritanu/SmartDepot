@@ -16,4 +16,4 @@
 
 * The intruder detection does motion detection using openCV. When an intruder is detected, it triggers a simple mail transfer protocol (SMTP)
 
-<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/Motion%20Detection%20Diagram.png">
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/MotionDetectionDiagram.jpeg">
