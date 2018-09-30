@@ -1,4 +1,5 @@
 
+<p align="center">
 <img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/sdmainlogo.jpg" width="501" height="200">
 
 
@@ -25,3 +26,8 @@
 The process goes as follows :
 
 <img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Blockchaindemo.png">
+
+Thank You!
+-Kritanu & Shivendra
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/sdsmalllogo.jpg" width="40" height="50">
+</p>
