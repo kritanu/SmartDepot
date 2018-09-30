@@ -16,4 +16,12 @@
 
 * The intruder detection does motion detection using openCV. When an intruder is detected, it triggers a simple mail transfer protocol (SMTP)
 
-<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/MotionDetectionDiagram.jpeg">
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/Motion%20Detection%20Diagram.png">
+
+* When any supply chain delivery comes to the warehouse, the QR Code on the package is scanned, updating it on the blockchain network.
+
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/Blockchain%20Implementation%20Diagram.png">
+
+The process goes as follows :
+
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Blockchaindemo.png">
