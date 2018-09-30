@@ -1,2 +1,2 @@
-# HoneywellHackathon
-The power of connected hackathon by Honeywell
+# Smart Depot
+### The power of connected hackathon by Honeywell
