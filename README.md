@@ -13,6 +13,32 @@
 
 **How it works**
 
+> install node package manager
+
+> cd "SmartDepot-Blockchain"
+
+> npm run dev
+
+> go to your assigned IP with port 3000
+
+*For blockchain test*
+
+> download app and build gradle through Android studio
+
+> scan any QR code
+
+> update
+
+*For motion detection test*
+
+> install python
+
+> pip install opencv-python
+
+> cd "MotionDetect"
+
+> python Motion.py (command line)
+
 * Climate sensing is done by a sensor on the raspberry pi which constantly returns the temperature and humidity value.
 
 * The intruder detection does motion detection using openCV. When an intruder is detected, it triggers a simple mail transfer protocol (SMTP)
