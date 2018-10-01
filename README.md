@@ -54,6 +54,7 @@ The process goes as follows :
 <img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Blockchaindemo.png">
 
 <center>Thank You!
+  
 -Kritanu & Shivendra</center>
 </p>
 <p align="center">
