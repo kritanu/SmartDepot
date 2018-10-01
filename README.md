@@ -11,7 +11,7 @@
 * Supply Chain Management using Blockchain.
 
 
-**How it works**
+**Installation**
 
 > install node package manager
 
@@ -38,6 +38,18 @@
 > cd "MotionDetect"
 
 > python Motion.py (command line)
+
+**Stack**
+* HTML/CSS/JS
+* JQuery
+* Solidity
+* Python 
+* OpenCV
+* npm
+* smtp
+
+
+**Working**
 
 * Climate sensing is done by a sensor on the raspberry pi which constantly returns the temperature and humidity value.
 
