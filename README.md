@@ -49,9 +49,10 @@
 
 <img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Flow%20Diagrams/Blockchain%20Implementation%20Diagram.png">
 
-The process goes as follows :
-
+**Blockchain Demo :**
 <img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/Blockchaindemo.png">
+**Motion Detection Demo :**
+<img src="https://github.com/kritanu82/SmartDepot/blob/master/PresentationHoneywell/MotionDetectdemo.png">
 
 <center>Thank You!
   
